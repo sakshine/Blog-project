@@ -1,0 +1,37 @@
+<%- include('header.ejs')%>
+    <div class="container-fluid register">
+      <br><br><br><br>
+      <div class="page-desc">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <center style="font-weight: bold;"><h1>register admin</h1></center>
+            <% if(message.length>0) { %>
+              <div class="alert alert-danger">
+                <%= message %>
+              </div>
+              <% } %>
+            <form method="post" enctype="multipart/form-data" action="/adminregister">
+              <div class="form-group" >
+                <input type="text" name="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="text" name="email" class="form-control" placeholder="E-Mail">
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="password" name="cpassword" class="form-control" placeholder=" Confirm Password">
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" class="btn btn-success">submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>
+    </div>
+
+<%- include('footer.ejs')%>
