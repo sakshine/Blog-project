@@ -1,13 +1,13 @@
 const express= require('express')
 const router= express.Router()
 const FrontController=require('../controllers/FrontController')
-const AdminController = require('../controllers/admin/AdminController')
-const BlogController = require('../controllers/admin/BlogController')
+const AdminController = require('../controllers/admin/adminController')
+const BlogController = require('../controllers/admin/blogController')
 const CategoryController = require('../controllers/admin/CategoryController')
-const ContactController = require('../controllers/admin/contactcontroller')
-const AboutController = require('../controllers/admin/aboutController')
+const ContactController = require('../controllers/admin/ContactController')
+// const AboutController = require('../controllers/admin/aboutController')
 // const {about} = require('../controllers/FrontController')
-const admin_auth = require('../middleware/auth')
+const admin_auth = require('../middleware/auth') 
 
 
 //frontend controller outer
